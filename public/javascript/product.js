@@ -1,12 +1,17 @@
 $(window).ready(function () {
+  $('.product-column').each(function () {
+    if(!$(this).hasClass('product-column_disabled')) {
+      $(this).addClass('mouse-out');
+    }
+  })
   $('.product-item, .product-text__link').click(function () {
     var parent = $(this).closest('.product-column');
     if(!parent.hasClass('product-column_disabled')) {
       parent.toggleClass('product-column_selected');
-      parent.addClass('mouse-in')
+      parent.removeClass('mouse-out')
       parent.find('.product-item__text').removeClass('product-item__text_hover').text('Сказочное заморское явство')
       parent.one('mouseleave', function () {
-        parent.removeClass('mouse-in');
+        parent.addClass('mouse-out');
       })
     }
   });

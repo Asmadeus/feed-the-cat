@@ -1,0 +1,30 @@
+@font-face
+  font-family: Exo
+  font-style: normal
+  src: url(/fonts/Exo2.0-Thin.otf)
+
+strong
+  font-weight: bold
+
+html
+body
+  width: 100%
+  height: 100%
+
+$default-blue = #1698d9
+$hover-blue = #2ea8e6
+$default-pink = #d91667
+$hover-pink = #e62e7a
+$disabled-color = #b3b3b3
+
+pseudo-el()
+  content: ''
+  z-index: 110
+  position: absolute
+
+pseudo-round-corner()
+  pseudo-el()
+  width: 50px
+  height: 50px
+  background-color: transparent
+  border: 4px solid
