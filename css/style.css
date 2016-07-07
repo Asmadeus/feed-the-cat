@@ -92,7 +92,7 @@ a img {
 @font-face {
   font-family: Exo;
   font-style: normal;
-  src: url("/fonts/Exo2.0-Thin.otf");
+  src: url("../fonts/Exo2.0-Thin.otf");
 }
 strong {
   font-weight: bold;
@@ -103,7 +103,7 @@ body {
   height: 100%;
 }
 body {
-  background: url("/img/bg.png");
+  background: url("../img/bg.png");
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -201,7 +201,7 @@ body {
   position: absolute;
   bottom: -90px;
   left: -28px;
-  background: url("/img/cat.png");
+  background: url("../img/cat.png");
   width: 367px;
   height: 358px;
   z-index: 10;
