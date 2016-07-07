@@ -1,5 +1,66 @@
 extend layout
 
 block content
-  p test
+  .container
+    h1.page-title Ты сегодня покормил кота?
+    .product-column
+      .product-item
+        p.product-item__text Сказочное заморское явство
+        h3.product-item__heading1 Нямушка
+        h3.product-item__heading2 с фуагра
+        p.product-item__desc
+          strong 10 
+          | порций
+          br 
+          | мышь в подарок
+        .product-item__amount
+          span.value 0,5
+          br
+          span.units кг
+        .product-item__img
+      p.product-text.product-text_default
+        | Чего сидишь? Порадуй котэ, 
+        span.product-text__link купи
+      p.product-text.product-text_select Печень утки разварная с артишоками
+      
+    .product-column.product-column_disabled
+      .product-item
+        p.product-item__text Сказочное заморское явство
+        h3.product-item__heading1 Нямушка
+        h3.product-item__heading2 с рыбой
+        p.product-item__desc
+          strong 40 
+          | порций
+          br
+          strong 2 
+          | мыши в подарок
+        .product-item__amount
+          span.value 2
+          br
+          span.units кг
+        .product-item__img
+      p.product-text Печалька, с рыбой закончился
+      
+    .product-column.product-column_selected
+      .product-item
+        p.product-item__text Сказочное заморское явство
+        h3.product-item__heading1 Нямушка
+        h3.product-item__heading2 с курой
+        p.product-item__desc
+          strong 100 
+          | порций
+          br
+          strong 5 
+          | мышей в подарок
+          br
+          | заказчик доволен
+        .product-item__amount
+          span.value 5
+          br
+          span.units кг
+        .product-item__img
+      p.product-text.product-text_default
+        | Чего сидишь? Порадуй котэ, 
+        span.product-text__link купи.
+      p.product-text.product-text_select Филе из цыплят с трюфелями в бульоне      
       
